@@ -1,0 +1,564 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+.busticket-col-2{
+    width: 80%;
+}
+
+.businfo{
+    padding: 20px 20px;
+}
+
+.busname p{
+   color: gray;
+}
+.busname{
+    width: 20%;
+    padding: 20px 10px;
+}
+ 
+.busname p{
+    padding: 10px 0px;
+} 
+.busname h4{ 
+    padding: 10px 0px;
+}
+.bustickets-btn {
+    width: 20%;
+}
+.bus-details{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.busstart-time,.busend-time{
+    padding: 8% 5px;
+}
+.busstart-time h3{
+    font-weight: 700;
+}
+.busstart-time p{
+    padding: 30px 0px;
+    font-size: 18px;
+    color: gray;
+}
+.bus-minutes{
+    padding: 14% 5px;
+}
+.bus-minutes p{
+    font-size: 20px;
+    color: gray;
+}
+.busend-time p{
+    padding: 30% 0px;
+    color: gray;
+}
+.busend-time h3{
+    color: gray;
+    font-weight: 300;
+}
+.bus-rating{
+    display: flex;
+    background-color: #38b87c;
+    padding: 5px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+}
+.bus-rating p{
+    font-size: 20px;
+}
+.bus-start{
+    margin: 5px 0px;
+}
+.bus-people{
+    margin-top: 20px;
+    display: flex;
+    color: gray;
+}
+.bus-people p{
+    font-size: 18px;
+}
+.bus-user{
+    margin-top: 5px;
+    margin-right: 8px;
+}
+.bus-price{
+    padding: 8% 5px;
+}
+.bus-price p{
+    font-size: 20px;
+    color: gray;
+}
+.bus-price span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+.bus-seats{
+    width: 20%;
+   
+}
+.bus-seats P{
+    padding: 30% 50px 50px;
+    color: gray;
+}
+.bustickets-btn{
+    width: 100%;
+    text-align: end;
+}
+.busticket-media-time{
+    display: flex;
+    justify-content: space-between;
+}
+.busticket-media-time p,.media-type p{
+    color: gray;
+}
+.busticket-media-rate{
+    display: flex;
+    justify-content: space-between;
+}
+.busticket-media{
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid rgb(180, 173, 173);
+}
+.busticket-media-btn{
+    text-align: center;
+}
+.busticket-media-btn button{
+    background-color: rgb(216, 78, 85);
+    border: none;
+    padding: 5px 15px;
+    color: #fff;
+}
+.media-price span{
+    font-size: 16px;
+    padding: 0px 10px;
+    color: gray;
+}
+
+
+
+.seat-col{
+    padding: 10px;
+}
+
+.seat-available{
+    display: flex;
+}
+.seat-type div{
+    border: 1px solid gray;
+    height: 30px;
+    width: 80px;
+    margin: 0px 30px 0px 0px;
+}
+.seat-type .seat-female{
+    border: 1px solid rgb(216, 78, 85);
+    background-color: #fff;
+}
+
+
+
+.board{
+    width: 100%;
+}
+.boarding h5{
+    border: 1px solid gray;
+   cursor: pointer;
+}
+.board-info{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 5px;
+}
+.place{
+    padding: 0px 10px;
+}
+.select-boarding{
+    border: 1px solid gray;
+    background-color: #fff;
+}
+.select-boarding h5{
+    padding: 10px;
+}
+.bustickets-name{
+    display: flex;
+}
+
+
+.bustickets-list li{
+    padding-left: 2%;
+    font-size:25px;
+
+}
+.busticket-col-1{
+    padding-top: 3%;
+}
+.busticket-col-1 ul{
+    list-style-type: none;
+}
+.busticket-col-1 h5{
+    padding-left: 30px;
+}
+.busticket-col-1 li input{
+    height: 20px;
+    width: 20px;
+    margin: 5px 20px;
+    border: 1px solid gray;
+}
+.busticket-col-1 li label{
+    color: gray;
+}
+.type-of-bus{
+    border: 1px solid gray;
+    padding: 20px;
+}
+.continue-btn{
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+}
+.continue-btn button{
+   border: none;
+   background-color: rgb(216, 78, 85);
+   color: #fff;
+   padding: 10px 60px;
+}
+.formpara{
+    color: red;
+}
+.formdetailsvisible{
+    background-color: #fff;
+    width: 100%;
+    height: 300px;
+}
+.formdetailsvisible .formname{
+    width: 95%;
+    border: 1px solid gray ;
+    padding: 5px;
+    margin: 10px 5px;
+}
+.inputname{
+    padding: 5px;
+    width: 100%;
+}
+.formgender{
+    padding: 5px 0px;
+}
+.formgender input{
+    padding: 5px;
+    margin: 5px;
+}
+.busticket-col-1 h5{
+    cursor: pointer;
+}
+.seat-form-btn{
+    text-align: center;
+}
+.seat-form-btn button{
+    padding: 5px 20px;
+    background-color:  rgb(216, 78, 85);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+.seat2-form2-btn{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.seat2-form2-btn button{
+    padding: 5px 20px;
+    border: none;
+    background-color:  rgb(216, 78, 85);
+    color: #fff;
+    border-radius: 5px;
+}
+.bus2-form input{
+    width: 95%;
+    padding: 5px;
+    margin: 5px 5px 0px 5px;
+    border: 1px solid rgb(202, 196, 196);
+}
+.seat2-personal-info{
+    background-color: #fff;
+}
+.formval input{
+    padding: 5px;
+    width: 95%;
+    margin: 5px 5px;
+}
+.genderinfo input{
+    margin: 5px 5px;
+}
+.ageinfo input{
+    padding: 5px;
+    width: 95%;
+    margin: 5px 5px;
+}
+.formsubmit{
+    text-align: center;
+    padding-top: 10px;
+}
+.ageinfo p{
+    color: red;
+}
+.formval p{
+    color: red;
+}
+.formsubmit button{
+    padding: 5px 20px;
+    background-color:  rgb(216, 78, 85);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.seat-avil  {
+    background-color: #fff;
+}
+.seat-unavil{
+    background-color: rgb(156, 149, 149);
+}
+
+@media(min-width:320px){
+    .busticket-row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .busname img{
+        height: 50px;
+        width: 100px;
+        padding-left: 5%;
+    }
+.busticket-col-1{
+    width: 20%;
+    display: none;
+}
+.bustickets-card{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    /* margin: 30px 10px; */
+    border:1px solid rgb(190, 184, 184);
+    }
+    .businfo{
+        display: none;
+    }
+.bustickets-btn button{
+    background-color: rgb(216, 78, 85);
+    width: 60%;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+}
+.busticket-media{
+    display: block;
+}
+.bus-seat-show{
+    margin: 0px 20px;
+    border: 1px solid gray;
+    width: 100%;
+    background-color: rgb(245, 240, 240);
+}
+.lower-bus{
+    display: flex;
+    flex-wrap: wrap;
+}
+.seat-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 5px
+}
+.seat{
+    border: 1px solid black;
+    height: 30px;
+    width: 50px;
+    background-color: #fff;
+}
+.seat-legend{
+    display: none;
+}
+.filter-btn{
+    border: none;
+    background-color: #fff;
+}
+.boarding{
+    display: flex;
+    width: 100%;
+    height: 450px;
+}
+.bustickets-list ul{
+    display: flex;
+    display: block;
+    padding-top: 5%;
+    list-style-type:none;
+}
+}
+
+
+
+
+@media(min-width:690px){
+    .busticket-row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .busname img{
+        height: 50px;
+        width: 100px;
+        padding-left: 5%;
+    }
+.busticket-col-1{
+    width: 20%;
+    display: none;
+}
+.bustickets-card{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    /* margin: 30px 10px; */
+    border:1px solid rgb(190, 184, 184);
+}
+.businfo{
+    display: none;
+}
+.bustickets-btn button{
+    background-color: rgb(216, 78, 85);
+    width: 60%;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+}
+.busticket-media{
+    display: block;
+}
+.bus-seat-show{
+    margin: 0px 20px;
+    border: 1px solid gray;
+    width: 100%;
+    background-color: rgb(245, 240, 240);
+}
+.lower-bus{
+    display: flex;
+    flex-wrap: wrap;
+}
+.seat-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 35px
+}
+.seat{
+    border: 1px solid black;
+    height: 30px;
+    width: 100px;
+    background-color: #fff;
+}
+.seat-legend{
+    display: block;
+}
+.boarding{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.bustickets-list ul{
+    display: flex;
+    padding-top: 5%;
+    list-style-type:none;
+}
+}
+
+
+@media(min-width:1000px){
+    .busticket-row{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .busname img{
+        height: 50px;
+        width: 100px;
+        padding-left: 5%;
+        display: block;
+    }
+.busticket-col-1{
+    width: 20%;
+    display: block;
+}
+.bustickets-card{
+    display: flex;
+    width: 100%;
+    height: 230px;
+    /* margin: 30px 10px; */
+    border:1px solid rgb(190, 184, 184);
+   
+}
+.bustickets-card:hover{
+    box-shadow: 0 0 20px rgb(224, 217, 217);
+}
+.businfo{
+    display: block;
+}
+.bustickets-btn button{
+    background-color: rgb(216, 78, 85);
+    width: 60%;
+    border: none;
+    color: #fff;
+    padding: 5px;
+}
+.busticket-media{
+    display: none;
+}
+.bus-seat-show{
+    margin: 0px 20px;
+    border: 1px solid gray;
+    width: 96.5%;
+    background-color: rgb(245, 240, 240);
+}
+.lower-bus{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.seat-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 35px
+}
+.seat{
+    border: 1px solid black;
+    height: 30px;
+    width: 100px;
+    background-color: #fff;
+}
+.seat-legend{
+    display: block;
+}
+.boarding{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.bustickets-list ul{
+    display: flex;
+    padding-top: 5%;
+    list-style-type:none;
+}
+}

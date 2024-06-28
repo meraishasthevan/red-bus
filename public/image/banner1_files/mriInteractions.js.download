@@ -1,0 +1,104 @@
+function getCookie(cookieName) {
+  try {
+    const cookieValue = document.cookie.split(`${cookieName}=`)[1];
+    return cookieValue ? unescape(cookieValue.split(";")[0]) : null;
+  } catch (err) {
+    return null;
+  }
+}
+
+function getPageName() {
+  try {
+    const pageName = location.pathname.split("/")[1];
+    if (!pageName) return "home";
+    if (pageName === "bus-tickets" || pageName === "bus-ticket") return "search";
+    return pageName;
+  } catch (err) {
+    return "home";
+  }
+}
+
+function getUrlEncodedBody(reqBody) {
+  let formBody = [];
+  for (const property in reqBody) {
+    const encodedKey = encodeURIComponent(property);
+    const encodedValue = encodeURIComponent(reqBody[property]);
+    formBody.push(encodedKey + "=" + encodedValue);
+  }
+  formBody = formBody.join("&");
+  return formBody;
+}
+
+function myScheduler() {
+  const sessionId = getCookie("mriSessionId") || "";
+  if (window.mriObject.length > 0) {
+    const clientId = getCookie("mriClientId");
+    let scripId = document.getElementById("mri_client_script");
+    let url = scripId && scripId.getAttribute('data-main');
+    const finalMriObject = [];
+    for (let data of window.mriObject) {
+      
+      if (data.hasOwnProperty("mri.start") && null == data["mri.start"]) {
+        continue;
+      }
+
+      let event = data.event;
+      // if (event) delete data["event"];
+      finalMriObject.push({
+        MriId: (clientId || sessionId ? `${clientId}_${sessionId}` : ""),
+        RequestTimestamp: data.timestamp || Math.round(new Date().getTime()),
+        Country_Name: getCookie("country"),
+        Currency: getCookie("currency"),
+        BusinessUnit: "BUS",
+        Language: getCookie("language"),
+        "Ga-clientid": getCookie("_ga"),
+        "Ga-sessionId": getCookie("_gid"),
+        uxEventName: event,
+        uxEventType: 'on click',
+        page: data.page || getPageName(),
+        uxEventBody: {...data}
+      }); 
+    }
+    // finalMriObject.map((mri) => {
+    //   console.log(`Page = ${mri.page} | eventName = ${mri.uxEventName} | Time = ${mri.RequestTimestamp}`);
+    // });
+    const reqBody = {
+      env: scripId && scripId.getAttribute('data-env') ? scripId.getAttribute('data-env') : 'prod',
+      channel: 'web',
+      payload: JSON.stringify({
+        Type: "UX Events",
+        EventSource: "WEB_DIRECT",
+        RBBuildVersion: typeof buildVersion == undefined ? "": buildVersion,
+        Payload: finalMriObject
+      })
+    };
+    if (url) {
+      fetch(url, {
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+        },
+        credentials: 'same-origin',
+        body: getUrlEncodedBody(reqBody),
+      }).then(response => {
+        if (response.status == 200) {
+          window.mriObject = [];
+        }
+      });
+    }
+  }
+
+}
+
+window.onbeforeunload = () => {
+  window.mriObject && window.mriObject.push({
+    timestamp: Math.round(new Date().getTime()),
+    event: 'pageUnLoad',
+  });
+  myScheduler();
+}
+
+setInterval(myScheduler, 5000);
+
+

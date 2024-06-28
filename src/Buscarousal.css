@@ -1,0 +1,16 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;  
+}
+
+.buscarousal-container{
+    width: 90%;
+    margin: auto;
+}
+.buscarousal-img img{
+    height: 190px;
+    width: 70%;
+    margin: auto;
+    padding-top: 5%;
+}

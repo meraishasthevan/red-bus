@@ -1,0 +1,230 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;  
+}
+
+
+.banner-h1{
+    position: absolute;
+    color: #ffff;
+    top: 20%;
+    left: 23%;
+    font-size: 40px;
+}
+
+
+
+
+.banner-inp{
+    border-right: 1px solid gray;
+    display: flex;
+}
+
+.banner-inp input{
+       border: 1px solid #ffff;
+       background-color: #ffff;
+       padding: 10px 5px;
+       text-align: center;
+       height: 100%;
+} 
+
+.banner-btn button{
+    padding: 10px 30px;
+       text-align: center;
+       
+       height: 100%;
+       border: none;
+       background-color: rgb(216, 78, 85);
+       color: #ffff;
+       font-size: 25px; 
+        font-weight: 500;
+      
+}
+.datepicker {
+    border: 1px solid #ffff;
+    background-color: #ffff;
+    padding: 30px 0px;
+    text-align: center;
+    height: 100%;
+}
+
+
+
+
+
+
+
+@media(min-width:320px){
+
+    .banner-col{
+        background-image:none;
+        height: 300px;
+        width: 100%;
+        position: relative;
+    }
+.banner-h1{
+display: none;
+}
+
+.banner-search{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 30px;
+    position: absolute;
+    top:30%;
+    left: 0%;
+    
+}
+.banner-btn button{
+    border-radius:30px;
+    width: 60%;
+    margin-left: 15%;
+}
+.date-pic{
+    margin-left: 20%;
+}
+
+.banner-inp{
+    border-right: 1px solid gray;
+    display: flex;
+    padding-left:15%;
+}
+.banner-btn{
+    width: 80%;
+    padding-left: 25%;
+    padding-top: 0px;
+}  
+
+.banner-inp i{
+    height: 100%; 
+    margin-top: 40px;
+    margin-left: 20px;
+    color: gray
+}
+#buslogo{
+    text-align: center;
+}
+}
+
+@media(min-width:690px){
+    
+.banner-col{
+    background-image: none;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.banner-h1{
+display: none;
+}
+
+.banner-search{
+    display: flex;
+    flex-wrap: wrap;
+    height: 120px;
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 30px;
+    position: absolute;
+    top:30%;
+    left: 0%;
+}
+.banner-btn button{
+    border-radius:30px;
+    width: 50%;
+    margin-left: 25%;
+}
+.date-pic{
+    margin-left: 0%;
+}
+
+.banner-inp{
+    border-right: 1px solid gray;
+    display: flex;
+
+    padding-left:0%;
+}
+.banner-btn{
+    width: 100%;
+    padding-left: 0%;
+    padding-top: 30px;
+}  
+.banner-inp i{
+    font-size: 30px;   
+    margin-top: 38px;
+    margin-left: 20px;
+    color: gray
+}
+}
+
+@media(min-width:1000px){
+    
+.banner-col{
+    background-image: url("../public/image/banner.png");
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.banner-h1{
+display: block;
+}
+
+
+.banner-search{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 120px;
+    width: 70%;
+    background-color: #ffff;
+    border-radius: 30px;
+    position: absolute;
+    top:55%;
+    left:21%;
+
+}
+.banner-btn button{
+    border-radius: 0px 30px 30px 0px;
+    width: 100%;
+    margin-left: 0%;
+}
+.date-pic{
+    margin-left: 0%;
+}
+
+.banner-inp{
+    border-right: 1px solid gray;
+    display: flex;
+    padding-left:0%;
+}
+.banner-btn{
+    width: 100%;
+    padding-left: 0%;
+    padding-top: 0px;
+} 
+.banner-inp i{
+    font-size: 30px;   
+    margin-top: 38px;
+    margin-left: 20px;
+    color: gray
+}
+.banner-inp .person{
+    font-size:25px;
+    margin-top: 36px;
+    margin-left: 0px;
+}
+.banner-inp input{
+    border:none;
+    padding:0px;
+    outline:none;
+}
+.banner-inp:hover input{
+    padding-bottom:30px;
+}
+
+}
